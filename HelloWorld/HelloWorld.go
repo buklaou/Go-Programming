@@ -1,12 +1,13 @@
 package main
+
 /*Every Go program is made up of packages.*/
 
 /*These are the import paths in use by the package. */
 import (
 	"fmt"
-	"time"
-	"math/rand"
 	"math"
+	"math/rand"
+	"time"
 )
 
 /*var i, j int = 1, 2
@@ -24,7 +25,6 @@ func add(x int, y int) int {
 	return x + y
 }
 
-
 /*swap function*/
 func swap(x, y string) (string, string) {
 	return y, x
@@ -35,7 +35,7 @@ If so, they are treated as variables defined at the top of the function.
 
 A return statement without arguments returns the named return values.
 This is known as a "naked" return. Should only be used in short functions.*/
-func split(sum int) (x,y int) {
+func split(sum int) (x, y int) {
 	x = sum * 4 / 9
 	y = sum - x
 	return
@@ -44,46 +44,28 @@ func split(sum int) (x,y int) {
 var c string = "Raffi"
 
 func main() {
- 	fmt.Println(c)
-
-
+	fmt.Println(c)
 
 	/*you can only use := inside a function as a short assignment statement
 	instead of declaring the type i.e. var*/
-
-
-
 
 	fmt.Printf("Hello World! My name is " + c + ".")
 	fmt.Println("The time is", time.Now())
 	fmt.Println(rand.Intn(10))
 
-
-
 	/*factored import statement which takes the value and enters it in string.*/
 	fmt.Printf("Now you have %g problems. ", math.Sqrt(7))
-
-
 
 	/*Pi is an exported name*/
 	fmt.Println(math.Pi)
 
-
-
 	fmt.Println(add(10, 10))
 
-
-
 	a := "hello"
-	b:= "hi"
+	b := "hi"
 	fmt.Println(swap(a, b))
 
-
-
 	fmt.Println(split(20))
-
-
-
 
 	/*i := 42           // int
 	f := 3.142        // float64
@@ -91,8 +73,6 @@ func main() {
 
 	v := 1 + 2i // change me!
 	fmt.Printf("v is of type %T\n", v)
-
-
 
 	/*constants cannot use :=*/
 	const Pi = 2.1

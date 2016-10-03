@@ -1,0 +1,15 @@
+Every package file must have the corresponding package name.
+If function names are uppercase they are exported outside the package. (exported/visible)
+If function names are lowercase they cannot be accessed from another package. (un-exported/not visible)
+You can import packages from github by "github.com/userName/repositoryName/packageName"
+
+Go Commands:
+go run
+go build
+go clean
+go install
+
+Variables
+
+shorthand := notation for assigning values to variables can only be used inside functions.
+if you don't assign a variable a value it defaults to its "zero value"

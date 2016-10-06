@@ -13,3 +13,8 @@ Variables
 
 shorthand := notation for assigning values to variables can only be used inside functions.
 if you don't assign a variable a value it defaults to its "zero value"
+
+Scope
+
+It is important to note that in code blocks, the position of statements matter.
+If you declare and assign a variable below the line that uses it, it will cause an error.
